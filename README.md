@@ -21,7 +21,7 @@
 | VOLT Issuer | GBALPCSLWTTOVYUJ35KSDBOQETFDFAGKMQOYN76OWLY7QCIHLQUHINBS |
 
 ## Screenshots
-> [PLACEHOLDER: Add your mobile responsive screenshot here]
+![Mobile Responsive View](./public/mobile-view.png)
 ![CI/CD Pipeline](https://github.com/kiwi-v1/Novapay/actions/workflows/main.yml/badge.svg)
 
 ## CI/CD
