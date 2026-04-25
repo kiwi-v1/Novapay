@@ -3,7 +3,14 @@
 > DeFi AMM on Stellar Soroban
 
 ## Live Demo
-[Deployment URL here]
+[YOUR_VERCEL_LINK_HERE]
+
+## Hackathon Level 4 Requirements Checklist
+- [x] **Inter-contract call working:** Yes, `LiquidityPool` dynamically invokes `VoltToken` transfers.
+- [x] **Custom token or pool deployed:** Yes, VOLT token and Automated Market Maker Pool deployed.
+- [x] **CI/CD running:** Yes, GitHub actions configured for Next.js build and TypeScript linting.
+- [x] **Mobile responsive:** Yes, fully mobile responsive layout with fluid tailwind grids.
+- [x] **Minimum 8+ meaningful commits:** Yes, >8 commits made on the `main` branch.
 
 ## Tech Stack
 - Next.js 14 (App Router)
