@@ -4,7 +4,7 @@
 > DeFi AMM on Stellar Soroban
 
 ## Live Demo
-[YOUR_VERCEL_LINK_HERE]
+[https://sage-sunflower-dcad53.netlify.app/](https://sage-sunflower-dcad53.netlify.app/)
 
 
 ## Tech Stack
