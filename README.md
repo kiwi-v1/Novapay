@@ -31,8 +31,8 @@ GitHub Actions workflow runs on every push to main:
 - Deploys to Vercel
 
 ## Inter-Contract Calls
-The swap function calls from the AMM Pool contract into the VOLT Token contract for balance checks and transfers. Transaction hash: [ADD HASH]
-
+The `add_liquidity`, `remove_liquidity`, and `swap` functions within the **Liquidity Pool Smart Contract** automatically invoke the **Token Contract** via cross-contract calls `env.invoke_contract::<()>` for real-time asset transfers without requiring intermediate steps from the user. 
+- **Transaction Hash Evidence:** `[PLACEHOLDER: Add a successful swap transaction hash here]`
 ## Custom Token & Pool
 - VOLT Token deployed at: CCHLK4RHSS27U4K6VRIP6QW2N5IGBJJES4GA4CI3RRUGP54G4FH5HL7P
 - Liquidity Pool deployed at: CCQZXG3QGFPLRS6LJJ4XALJGUGVNLISYN6BJSVOH57ED6FYJH7KGKXAR
