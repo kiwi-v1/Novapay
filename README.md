@@ -22,7 +22,7 @@
 
 ## Screenshots
 > [PLACEHOLDER: Add your mobile responsive screenshot here]
-> [PLACEHOLDER: Add your CI/CD pipeline badge/screenshot here]
+![CI/CD Pipeline](https://github.com/kiwi-v1/Novapay/actions/workflows/main.yml/badge.svg)
 
 ## CI/CD
 GitHub Actions workflow runs on every push to main:
