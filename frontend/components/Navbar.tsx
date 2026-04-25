@@ -58,7 +58,7 @@ export function Navbar() {
         {/* Left: Brand */}
         <Link href="/" className="flex items-center gap-2 group">
           <span className="text-[#C8FF00] text-2xl" style={{ textShadow: '0 0 10px rgba(200,255,0,0.4)' }}>⚡</span>
-          <span className="font-display font-[800] uppercase tracking-[0.08em] text-[var(--text-primary)] text-lg">NOVA PAY</span>
+          <span className="font-display font-[800] uppercase tracking-[0.08em] text-[var(--text-primary)] text-base md:text-lg">NOVA PAY</span>
         </Link>
 
         {/* Center: Desktop Nav */}
