@@ -1,9 +1,9 @@
 #![cfg(test)]
 use super::*;
-use volt_token::{VoltToken, VoltTokenClient};
 use liquidity_pool::{LiquidityPool, LiquidityPoolClient};
 use soroban_sdk::testutils::{Address as _, Events};
 use soroban_sdk::{Env, String};
+use volt_token::{VoltToken, VoltTokenClient};
 
 #[test]
 fn test_batch_operation() {
