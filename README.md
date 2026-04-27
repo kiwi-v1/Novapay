@@ -14,13 +14,12 @@
 - Freighter Wallet API
 - SWR for real-time data polling
 
-## Smart Contract Addresses (Testnet)
-| Contract | Address |
-|---|---|
-| Liquidity Pool | CCQZXG3QGFPLRS6LJJ4XALJGUGVNLISYN6BJSVOH57ED6FYJH7KGKXAR |
-| VOLT Token | CCHLK4RHSS27U4K6VRIP6QW2N5IGBJJES4GA4CI3RRUGP54G4FH5HL7P |
-| Asset Wrapper | CBMGE6BSHIGBXAUMW32D542POCBMI3DHP7ZZGI6RTGPRECJQA3S5ZFDI |
-| VOLT Issuer | GBALPCSLWTTOVYUJ35KSDBOQETFDFAGKMQOYN76OWLY7QCIHLQUHINBS |
+| Contract | Address | Link |
+|---|---|---|
+| Liquidity Pool | `CCQZXG3QGFPLRS6LJJ4XALJGUGVNLISYN6BJSVOH57ED6FYJH7KGKXAR` | [Stellar Expert](https://stellar.expert/explorer/testnet/contract/CCQZXG3QGFPLRS6LJJ4XALJGUGVNLISYN6BJSVOH57ED6FYJH7KGKXAR) |
+| VOLT Token | `CCHLK4RHSS27U4K6VRIP6QW2N5IGBJJES4GA4CI3RRUGP54G4FH5HL7P` | [Stellar Expert](https://stellar.expert/explorer/testnet/contract/CCHLK4RHSS27U4K6VRIP6QW2N5IGBJJES4GA4CI3RRUGP54G4FH5HL7P) |
+| Asset Wrapper | `CBMGE6BSHIGBXAUMW32D542POCBMI3DHP7ZZGI6RTGPRECJQA3S5ZFDI` | [Stellar Expert](https://stellar.expert/explorer/testnet/contract/CBMGE6BSHIGBXAUMW32D542POCBMI3DHP7ZZGI6RTGPRECJQA3S5ZFDI) |
+| VOLT Issuer | `GBALPCSLWTTOVYUJ35KSDBOQETFDFAGKMQOYN76OWLY7QCIHLQUHINBS` | [Stellar Expert](https://stellar.expert/explorer/testnet/account/GBALPCSLWTTOVYUJ35KSDBOQETFDFAGKMQOYN76OWLY7QCIHLQUHINBS) |
 
 ## Screenshots
 ![Mobile Responsive View](./public/mobile-view.png)
@@ -28,16 +27,16 @@
 
 ## CI/CD
 GitHub Actions workflow runs on every push to main:
-- Lints TypeScript
-- Builds Next.js production bundle
-- Deploys to Vercel
+- **Smart Contracts:** Lints, tests, and builds Soroban Rust contracts (WASM).
+- **Frontend:** Lints TypeScript and builds Next.js production bundle.
+- **Verification:** Ensures full project integrity before deployment.
 
 ## Inter-Contract Calls
 The `add_liquidity`, `remove_liquidity`, and `swap` functions within the **Liquidity Pool Smart Contract** automatically invoke the **Token Contract** via cross-contract calls `env.invoke_contract::<()>` for real-time asset transfers without requiring intermediate steps from the user. 
-- **Transaction Hash Evidence:** `[PLACEHOLDER: Add a successful swap transaction hash here]`
+- **Transaction Hash Evidence:** `3715b5082121510444585f98826509f6df84643f8e658e390c50172e259e55e5` ([View on Stellar Expert](https://stellar.expert/explorer/testnet/tx/3715b5082121510444585f98826509f6df84643f8e658e390c50172e259e55e5))
 ## Custom Token & Pool
-- VOLT Token deployed at: CCHLK4RHSS27U4K6VRIP6QW2N5IGBJJES4GA4CI3RRUGP54G4FH5HL7P
-- Liquidity Pool deployed at: CCQZXG3QGFPLRS6LJJ4XALJGUGVNLISYN6BJSVOH57ED6FYJH7KGKXAR
+- VOLT Token deployed at: [`CCHLK4RHSS27U4K6VRIP6QW2N5IGBJJES4GA4CI3RRUGP54G4FH5HL7P`](https://stellar.expert/explorer/testnet/contract/CCHLK4RHSS27U4K6VRIP6QW2N5IGBJJES4GA4CI3RRUGP54G4FH5HL7P)
+- Liquidity Pool deployed at: [`CCQZXG3QGFPLRS6LJJ4XALJGUGVNLISYN6BJSVOH57ED6FYJH7KGKXAR`](https://stellar.expert/explorer/testnet/contract/CCQZXG3QGFPLRS6LJJ4XALJGUGVNLISYN6BJSVOH57ED6FYJH7KGKXAR)
 
 ## Local Development
 To get started locally, follow these steps:
